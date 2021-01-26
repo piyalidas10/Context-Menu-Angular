@@ -1,0 +1,6 @@
+<div class="contextMenu" tabindex="-1" aria-hidden="true">
+  <ul *ngIf="isDisplayContextMenu">
+    <li *ngFor="let menuItem of contextMenuItems; index as i"
+    (click)="onContextMenuClick($event, menuItem.menuLink)">{{ menuItem.menuText }}</li>
+  </ul>
+  </div>
